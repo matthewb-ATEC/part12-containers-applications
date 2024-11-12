@@ -1,0 +1,11 @@
+docker container run -it ubuntu bash
+
+# Installed vim instead of nano
+apt update
+apt install -y vim
+
+cd usr/src/app
+vi index.js
+
+# Pasted the console log into the file
+:wq
