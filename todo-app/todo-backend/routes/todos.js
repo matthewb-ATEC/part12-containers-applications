@@ -3,7 +3,10 @@ const { Todo } = require('../mongo')
 const router = express.Router()
 const redis = require('redis-promisify')
 
-const client = redis.createClient()
+const client = redis.createClient({
+  host: 'redis',
+  port: 6379,
+})
 
 /* GET todos listing. */
 router.get('/', async (_, res) => {
