@@ -10,7 +10,7 @@ router.get('/', async (_, res) => {
     res.send(value)
   } else {
     await client.setAsync('added_todos', 0)
-    res.send(0)
+    res.send(value)
   }
 })
 
