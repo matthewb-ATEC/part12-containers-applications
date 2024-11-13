@@ -1,1 +1,8 @@
+db.todos.find({})
+db.todos.insertOne({text:"new todo", done: false})
+db.todos.create({text:"new todo", done: false})
+db.todos.find({})
+show collections
+use the_database
+show dbs
 db.createUser({ user: "root", pwd: "example", roles: [{ role: 'root', db: "admin" }] })
