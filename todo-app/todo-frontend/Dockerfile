@@ -2,9 +2,11 @@ FROM node:20 AS build-stage
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY package*.json ./
 
 RUN npm ci
+
+COPY . .
 
 RUN npm run test
 
