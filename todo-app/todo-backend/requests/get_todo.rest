@@ -1,1 +1,1 @@
-GET http://localhost:3000/todos/6734bc9a2dd0c11ea759139e
+GET http://localhost:3000/todos
